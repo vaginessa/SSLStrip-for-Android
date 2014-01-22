@@ -15,6 +15,7 @@ import android.content.SharedPreferences;
 import android.database.MatrixCursor;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.text.format.Formatter;
@@ -233,7 +234,7 @@ public class Main extends Activity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        NanoHTTPD.startInstance("8080", "/sdcard/");
+        NanoHTTPD.startInstance("8080", Environment.getExternalStorageDirectory().getPath());
     }
     
     private void stopAll() {
