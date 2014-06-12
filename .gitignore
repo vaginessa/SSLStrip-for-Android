@@ -1,0 +1,38 @@
+# Generic .gitignore file for android projects
+# https://github.com/Zbob750/
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Libraries
+libs/*.jar
+
+# proguard stuff
+proguard/
+proguard-project.txt
+
+# Local configuration file (sdk path, etc)
+local.properties
+project.properties
+ant.properties
+lint.xml
+build.xml
+.classpath
+.project
+.settings
+
+# IntelliJ IDEA
+.idea/
+*.eml
+*.iml
